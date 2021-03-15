@@ -1,13 +1,26 @@
 {
-  "Post": {
-    "title": "string",
-    "views": "int",
-    "published": "boolean",
-    "createdAt": "date",
-    "comments": "Comment[]"
+  "Company": {
+    "id":  "int",
+    "name": "string",
+    "sites": "Site[]"
   },
-  "Comment": {
-    "body": "string",
-    "post": "Post"
+  "Site": {
+    "id": "int",
+    "name": "string",
+    "address": "Address",
+    "contactinfo": "ContactInfo"
+  },
+  "Address": {
+    "buildingnameno": "string",
+    "street": "string",
+    "locality": "string",
+    "city": "string",
+    "county": "string",
+    "postcode": "string"
+  },
+  "ContactInfo": {
+    "email": "string",
+    "preferredphone": "string",
+    "altphone": "string"
   }
 }
